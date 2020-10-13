@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&family=Sansita+Swashed:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;700&family=Sansita+Swashed:wght@900&display=swap');
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{   
+    
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%) );
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    position: relative;
+}
+
+.wrapper {
+    background: url("./images/illustration-woman-online-desktop.svg") no-repeat -20% 28%, url(./images/bg-pattern-desktop.svg)-550px -320px/cover no-repeat;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: white;
+    width: 940px;
+    height: 500px;
+    max-height: 500px;
+    max-width: 100%;
+    border-radius: 25px;
+    position: relative;
+    padding: 3rem 2rem;
+}
+
+.noHide{
+    position: relative;
+    transform: translate(-124px, 125px)
+}
+h1{
+    padding-bottom: 30px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+hr.solid {
+    border-top: 0.8px solid hsl(240, 5%, 91%);
+    margin-top: 15px;
+  }
+summary {
+    padding-top: 18px;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+summary:hover{
+color: #F47B56;
+cursor: pointer;
+}
+
+details > p {
+    padding-top: 8px;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+summary::-webkit-details-marker {
+   display: none;
+
+ }
+
+ summary:after{
+    content: url(images/icon-arrow-down.svg);
+    float: right;
+ }
+ details[open] > summary {
+    font-weight: 700;
+ }
+ details[open] summary:after {
+    content: url(images/icon-arrow-down.svg);
+    display: inline-block;
+    transform: rotate(180deg);
+ }
+
+ .question {
+     width: 480px;
+     height: auto;
+     padding-right: 20px;
+     padding-top: 10px;
+     
+ }
